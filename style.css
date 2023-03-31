@@ -18,6 +18,11 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 button {
     background: none;
     border: 0;
@@ -132,6 +137,7 @@ button {
 
 .center-title {
     padding: 0 0 0 110px;
+    flex-shrink: 0;
 }
 
 .center-title h2 {
@@ -199,7 +205,6 @@ button {
 .bottom-form {
     border-radius: 60px;
     background: #fff;
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -207,10 +212,14 @@ button {
 }
 
 .bottom-form input {
-    flex-grow: 1;
     border-radius: 60px;
     border: 0;
+    background: url(./mail.png) no-repeat 0 center;
+    flex-grow: 1;
+    padding-left: 30px;
 }
+
+
 
 
 .footer-banner {
