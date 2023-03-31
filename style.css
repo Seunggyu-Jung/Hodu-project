@@ -30,6 +30,13 @@ button {
     background: #F2E9D8;
 }
 
+@media (max-width:360px) {
+    .page-top {
+        background: #F2E9D8;
+    }
+}
+
+
 .page-middle {
     padding: 80px 320px 0;
 }
@@ -61,6 +68,13 @@ button {
     color: #fff;
 }
 
+.btn-sub {
+    padding: 15px 30px;
+    background: #D97652;
+    border-radius: 40px;
+    color: #fff;
+}
+
 
 .page-front {
     display: flex;
@@ -68,6 +82,27 @@ button {
     gap: 128px;
     margin-top: 51px;
 }
+
+@media (min-width:361px) {
+    .page-front {
+        display: flex;
+        align-items: center;
+        margin-top: 51px;
+        gap: 128px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .page-front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+    }
+}
+
+
 
 
 .page-front h2:nth-child(2) {
@@ -82,7 +117,6 @@ button {
     margin-right: 40%;
     margin-bottom: 40px;
 }
-
 
 
 .page-center {
@@ -109,7 +143,7 @@ button {
     text-align: center;
 }
 
-article {
+.middle-text {
     margin-top: 120px;
 }
 
@@ -144,6 +178,53 @@ article {
     display: flex;
     gap: 52px;
 }
+
+.page-article {
+    display: flex;
+    padding: 50px 58px;
+    background: #263140;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: -100px;
+}
+
+.page-article div {
+    color: #fff;
+}
+
+.page-article h2 {
+    margin-bottom: 18px;
+}
+
+.bottom-form {
+    border-radius: 60px;
+    background: #fff;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 120px;
+}
+
+.bottom-form input {
+    flex-grow: 1;
+    border-radius: 60px;
+    border: 0;
+}
+
+
+.footer-banner {
+    padding: 31px 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-img img {
+    display: inline-block;
+    width: 100%;
+    height: 360px;
+}
+
 
 
 
