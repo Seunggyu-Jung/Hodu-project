@@ -213,10 +213,10 @@ header {
 .bottom-form input {
     border-radius: 60px;
     border: 0;
-    background: url(./mail.png) no-repeat 0 center;
+    background: url(./mail.png) no-repeat 20px center;
     background-color: #fff;
     flex-grow: 1;
-    padding: 20px 300px 20px 30px;
+    padding: 20px 280px 20px 50px;
 }
 
 .bottom-form button {
