@@ -41,6 +41,17 @@ button {
     cursor: pointer;
 }
 
+.a11y-hidden {
+clip: rect(1px, 1px, 1px, 1px);
+clip-path: inset(50%);
+margin: -1px;
+width: 1px;
+height: 1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+}
+
 header {
     background: #F2E9D8;
 }
@@ -49,12 +60,6 @@ header {
     max-width: 1280px;
     margin: auto ;
 }
-
-
-
-
-
-
 
 .middle-wrap {
     max-width: 1280px;
@@ -212,10 +217,6 @@ header {
 }
 
 .bottom-form {
-    /* border-radius: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: space-between; */
     position: relative;
     flex-grow: 1;
     margin-left: 120px;
@@ -233,9 +234,8 @@ header {
 
 .bottom-form button {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(370px, 5px);
+    top: 5px;
+    right: 5px;
 }
 
 
@@ -259,6 +259,15 @@ header {
     .top-banner {
         padding: 20px;
     }
+    .a11y-hidden {
+        clip: auto;
+        clip-path: none;
+        margin-right: 0;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        position: static;
+        }
     
     .top-banner nav {
         clip: rect(1px, 1px, 1px, 1px);
@@ -279,6 +288,7 @@ header {
     }
     .front-content p {
         margin: 0 50px 30px;
+        /* padding: 10px; */
         line-height: 17.53px;
         font-weight: 400;
         font-size: 14px;
@@ -287,13 +297,18 @@ header {
         margin: 0 50px 30px;
         font-size: 24px;
         line-height: 30.05px;
+        font-weight: 700;
+    }
+
+    .front-title span {
+        display: block;
     }
     .page-front img {
         max-width: calc(390px - (95px * 2));
     }
 
     .middle-wrap {
-        padding: 32px;
+        padding: 30px 25px 30px 30px;
     }
 
     .page-center {
@@ -301,6 +316,7 @@ header {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        margin-top: 0;
     }
 
     .page-center img {
@@ -313,6 +329,9 @@ header {
 
     .page-center p {
         font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        font-style: normal;
     }
 
     .middle-text {
@@ -362,14 +381,15 @@ header {
     }
 
     .bottom-form input {
-        padding: 12px 20px 12px 30px;
+        padding: 12px 20px 12px 50px;
     }
 
     .bottom-form button {
         position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(100px, 60px);
+        top: 50%;
+        left: 50%;
+        right: 0;
+        transform: translateY(40px);
     }
 
 
